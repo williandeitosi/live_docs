@@ -33,6 +33,7 @@ const Notifications = () => {
           alt="inbox"
           width={24}
           height={24}
+          className="invert"
         />
         {count > 0 && (
           <div className="absolute right-2 top-2 z-20 size-2 rounded-full bg-gray-500" />
