@@ -108,7 +108,7 @@ const CollaborativeRoom = ({
                   onClick={() => {
                     setEditing(true);
                   }}
-                  className="cursor-pointer"
+                  className="cursor-pointer invert"
                 />
               )}
 

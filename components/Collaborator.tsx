@@ -39,7 +39,7 @@ const Collaborator = ({
   };
 
   return (
-    <li className="flex items-center justify-between gap-2 py-3">
+    <li className="flex items-center justify-between gap-2 py-3 bg-gray-50">
       <div className="flex gap-2">
         <Image
           src={collaborator.avatar}
@@ -49,13 +49,13 @@ const Collaborator = ({
           className="size-9 rounded-full"
         />
         <div>
-          <p className="line-clamp-1 text-sm font-semibold leading-4 text-white">
+          <p className="line-clamp-1 text-sm font-semibold leading-4 text-black">
             {collaborator.name}
             <span className="text-10-regular pl-2 text-blue-100">
               {loading && "updating..."}
             </span>
           </p>
-          <p className="text-sm font-light text-blue-100">
+          <p className="text-sm font-light text-gray-500">
             {collaborator.email}
           </p>
         </div>

@@ -8,7 +8,7 @@ const Loader = () => {
         alt="Loader"
         width={32}
         height={32}
-        className="animate-spin"
+        className="animate-spin invert"
       />
       Loading...
     </div>

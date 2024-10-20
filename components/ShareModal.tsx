@@ -71,11 +71,11 @@ const ShareModal = ({
           </DialogDescription>
         </DialogHeader>
 
-        <Label htmlFor="email" className="mt-6 text-blue-100">
+        <Label htmlFor="email" className="mt-6 text-gray-500">
           Email address
         </Label>
         <div className="flex items-center gap-3">
-          <div className="flex flex-1 rounded-md bg-dark-400">
+          <div className="flex flex-1 rounded-md bg-gray-400">
             <Input
               id="email"
               placeholder="Enter email address"

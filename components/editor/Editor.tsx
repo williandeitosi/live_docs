@@ -55,7 +55,7 @@ export function Editor({
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
-      <div className="editor-container size-full text-white">
+      <div className="editor-container size-full text-black">
         <div className="toolbar-wrapper flex min-w-full justify-between">
           <ToolbarPlugin />
           {currentUserType === "editor" && <DeleteModal roomId={roomId} />}

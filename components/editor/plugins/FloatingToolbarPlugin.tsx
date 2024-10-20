@@ -107,7 +107,7 @@ function Toolbar({
         minWidth: "max-content",
       }}
     >
-      <div className="floating-toolbar">
+      <div className="floating-toolbar ">
         <button
           onClick={() => {
             const isOpen = editor.dispatchCommand(
@@ -118,13 +118,14 @@ function Toolbar({
               onRangeChange(null);
             }
           }}
-          className="floating-toolbar-btn"
+          className="floating-toolbar-btn  "
         >
           <Image
             src="/assets/icons/comment.svg"
             alt="comment"
             width={24}
             height={24}
+            className="invert"
           />
         </button>
       </div>
