@@ -20,8 +20,8 @@ const Header = ({ children, className }: HeaderProps) => {
           height={32}
           className="mr-2 md:hidden"
         />
-        <h1 className="text-black flex items-center justify-center	">
-          Live Docs
+        <h1 className="hidden md:flex  text-black items-center justify-center	">
+          Write together
         </h1>
       </Link>
       {children}

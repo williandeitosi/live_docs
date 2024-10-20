@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Live Docs",
+  title: "Write together",
   description: "edit your files together",
 };
 
