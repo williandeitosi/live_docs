@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Write together
 
-First, run the development server:
+Esta é uma aplicação web para edição colaborativa de documentos em tempo real. Ela permite que múltiplos usuários editem ou visualizem documentos simultaneamente, com gerenciamento de permissões pelo administrador. A autenticação é feita pelo Clerk, e o Sentry é usado para monitoramento de erros e performance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **[Next.js](https://nextjs.org/)**: Framework React moderno para desenvolvimento web.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superconjunto de JavaScript que adiciona tipagem estática ao projeto.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização rápida e customizável.
+- **[ShadCN](https://shadcn.dev/)**: Componentes UI estilizados para facilitar a criação de interfaces com Tailwind CSS.
+- **[Liveblocks](https://liveblocks.io/)**: Gerenciamento de edição em tempo real, permitindo que os usuários colaborem de forma simultânea.
+- **[Clerk](https://go.clerk.com/BNbvGnJ)**: Autenticação e gerenciamento de usuários, garantindo segurança e simplicidade no login.
+- **[Sentry](https://bit.ly/4abT6PG)**: Monitoramento de erros e performance, ajudando a identificar e resolver problemas rapidamente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Edição em Tempo Real**: Múltiplos usuários podem editar o mesmo documento simultaneamente.
+- **Permissões de Acesso**: Administradores podem conceder permissões de edição ou definir visualização apenas.
+- **Autenticação Segura**: Integração com Clerk para uma experiência de login rápida e segura, com acesso a documentos salvos.
+- **Monitoramento de Erros**: Sentry para rastrear e corrigir possíveis falhas no sistema.
 
-## Learn More
+## 🚀 Como Usar
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/williandeitosi/live_docs.git
+   cd live_docs
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Configure as variáveis de ambiente:
+   - Crie um arquivo `.env` e adicione suas chaves da API para Liveblocks, Clerk e Sentry.
 
-## Deploy on Vercel
+4. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Acesse a aplicação em `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📖 Documentação
+
+- **Next.js**: [Documentação Oficial](https://nextjs.org/docs)
+- **TypeScript**: [Documentação Oficial](https://www.typescriptlang.org/docs/)
+- **Tailwind CSS**: [Documentação Oficial](https://tailwindcss.com/docs)
+- **ShadCN**: [Documentação Oficial](https://shadcn.dev/docs)
+- **Liveblocks**: [Documentação Oficial](https://liveblocks.io/docs)
+- **Clerk**: [Documentação Oficial](https://docs.clerk.dev/)
+- **Sentry**: [Documentação Oficial](https://docs.sentry.io/)
+
+## 📝 Contribuições
+
+Sinta-se à vontade para abrir issues e enviar pull requests para melhorias ou correções.
