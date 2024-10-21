@@ -1,5 +1,6 @@
 
 # Write together
+![Captura de tela 2024-10-21 180948](https://github.com/user-attachments/assets/ea738178-0998-4c88-8b23-12ad0c4e4270)
 
 Esta é uma aplicação web para edição colaborativa de documentos em tempo real. Ela permite que múltiplos usuários editem ou visualizem documentos simultaneamente, com gerenciamento de permissões pelo administrador. A autenticação é feita pelo Clerk, e o Sentry é usado para monitoramento de erros e performance.
 
