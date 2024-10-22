@@ -24,7 +24,6 @@ export default function FloatingToolbar() {
   useEffect(() => {
     editor.registerUpdateListener(({ tags }) => {
       return editor.getEditorState().read(() => {
-        // Ignore selection updates related to collaboration
         if (tags.has("collaboration")) return;
 
         const selection = $getSelection();
@@ -253,7 +252,6 @@ export function createDOMRange(
     range.collapsed &&
     (anchorOffset !== focusOffset || anchorKey !== focusKey)
   ) {
-    // Range is backwards, we need to reverse it
     range.setStart(focusDOM, focusOffset);
     range.setEnd(anchorDOM, anchorOffset);
   }

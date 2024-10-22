@@ -10,7 +10,6 @@ export const getClerkUsers = async ({ userIds }: { userIds: string[] }) => {
       emailAddress: userIds,
     });
 
-    // Create a map for quick lookup
     const userMap = new Map(
       data.map((user) => [
         user.emailAddresses[0].emailAddress,
@@ -23,11 +22,9 @@ export const getClerkUsers = async ({ userIds }: { userIds: string[] }) => {
       ])
     );
 
-    // Map through userIds and handle missing users
     const sortedUsers = userIds.map((email) => {
       const user = userMap.get(email);
       if (!user) {
-        // Return a placeholder user object if no matching user found
         return {
           id: email,
           name: "Unknown User",
@@ -41,7 +38,7 @@ export const getClerkUsers = async ({ userIds }: { userIds: string[] }) => {
     return parseStringify(sortedUsers);
   } catch (error) {
     console.error(`Error fetching users:`, error);
-    return parseStringify([]); // Return empty array instead of undefined
+    return parseStringify([]);
   }
 };
 
@@ -73,6 +70,6 @@ export const getDocumentUsers = async ({
     return parseStringify(users);
   } catch (error) {
     console.error(`Error fetching document users:`, error);
-    return parseStringify([]); // Return empty array instead of undefined
+    return parseStringify([]);
   }
 };

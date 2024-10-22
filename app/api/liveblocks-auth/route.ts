@@ -9,7 +9,6 @@ export async function POST(request: Request) {
   if (!clerkUser) redirect("/sign-in");
 
   const { id, firstName, lastName, emailAddresses, imageUrl } = clerkUser;
-  // Get the current user from your database
   const user = {
     id,
     info: {
@@ -21,7 +20,6 @@ export async function POST(request: Request) {
     },
   };
 
-  // Identify the user and return the result
   const { status, body } = await liveblocks.identifyUser(
     {
       userId: user.info.email,

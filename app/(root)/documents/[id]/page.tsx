@@ -26,7 +26,6 @@ const Document = async ({ params: { id } }: SearchParamProps) => {
   const userIds = Object.keys(room.usersAccesses);
   const users = await getClerkUsers({ userIds });
 
-  // Ensure users is always an array
   const safeUsers = Array.isArray(users) ? users : [];
 
   const usersData = safeUsers.map((user: User) => {
