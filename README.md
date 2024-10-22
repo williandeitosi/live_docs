@@ -4,6 +4,10 @@
 
 Esta é uma aplicação web para edição colaborativa de documentos em tempo real. Ela permite que múltiplos usuários editem ou visualizem documentos simultaneamente, com gerenciamento de permissões pelo administrador. A autenticação é feita pelo Clerk, e o Sentry é usado para monitoramento de erros e performance.
 
+
+
+[Visite o site](https://wt.williandeitosi.com)
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **[Next.js](https://nextjs.org/)**: Framework React moderno para desenvolvimento web.
